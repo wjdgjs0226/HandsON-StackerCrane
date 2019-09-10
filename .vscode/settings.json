@@ -1,0 +1,7 @@
+{
+    "files.eol": "\n",
+    "ev3devBrowser.download.exclude": "{**/.*,LICENSE,README.md}",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.pythonPath": "C:\\ProgramData\\Anaconda3\\python.exe"
+}
