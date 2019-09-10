@@ -36,8 +36,8 @@ def funTestSocket():
 
     # The following code set the ip address and port of the socket server
     # If you connect the EV3 to the internet using Mobile Phone network via bluetooth, you should replace the ip address with the dns or your socket server,
-    HOST, PORT = "192.168.0.4", 8515
-    # HOST, PORT = "192.168.0.4", 8515
+    HOST, PORT = " ", 8515
+    # HOST, PORT = "*USE THE IP ADDRESS", 8515
 
     try:
         bolProgramEnd = False
