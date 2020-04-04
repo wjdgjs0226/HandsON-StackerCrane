@@ -105,9 +105,9 @@ def StartServerSocket():
     # 5th chr: Y coordinate (Floor of shelf) Identifier (From A to C)
     # 6th chr: Time identifier (Be able to set the time between the command)
     # Example: ABAHCA - Crane 1 puts a cartridge in the 3rd floor, 6th left shelf
-    for i in range (1000):
-        
-        
+    # Below is the example data layout
+    for i in range (10):
+        # Data input
         CmdList.append("AAABA")
         CmdList.append("ABAMC")
         CmdList.append("BAAMC")
@@ -117,70 +117,7 @@ def StartServerSocket():
         CmdList.append("AAABA") 
         CmdList.append("ABBLC")
         CmdList.append("BABLC")
-        CmdList.append("BBBSA")
-        CmdList.append("BAALB")
-        CmdList.append("BBAOB")
-        CmdList.append("BAAOB")
-        CmdList.append("BBBLC")
-        CmdList.append("AAABA")
-        CmdList.append("ABALA")
-        CmdList.append("AABLC")
-        CmdList.append("ABAFB")
-        CmdList.append("BAALA")
-        CmdList.append("BBBSB")
-        CmdList.append("AAABA")
-        CmdList.append("ABBLA")
-        CmdList.append("BABTA")
-        CmdList.append("BBBIB")
-        CmdList.append("AAAFB")
-        CmdList.append("ABBLB")
-        CmdList.append("BABLA")
-        CmdList.append("BBBNC")
-        CmdList.append("AAABA")
-        CmdList.append("ABBIA")
-        CmdList.append("BABSB")
-        CmdList.append("BBALA")
-        CmdList.append("AAALA")
-        CmdList.append("ABBDA")
-        CmdList.append("BABIA")
-        CmdList.append("BBBOC")
-        CmdList.append("AABDA")
-        CmdList.append("ABALA")
-        CmdList.append("BABNC")
-        CmdList.append("BBBLA")
-        CmdList.append("AABIB")
-        CmdList.append("ABBDA")
-        CmdList.append("BABOC")
-        CmdList.append("BBBIA")
-        CmdList.append("AABDA")
-        CmdList.append("ABALC")
-        CmdList.append("BABLB")
-        CmdList.append("BBBRB")
-        CmdList.append("AABIA")
-        CmdList.append("ABADB")
-        CmdList.append("BABRB")
-        CmdList.append("BBBMB")
-        CmdList.append("BAALC") 
-        CmdList.append("BBAUA")
-        CmdList.append("AABLA")
-        CmdList.append("ABAGB")
-        CmdList.append("BABSA")
-        CmdList.append("BBBLB")
-        CmdList.append("BABMB")
-        CmdList.append("BBAUA")
-        CmdList.append("BABLB")
-        CmdList.append("BBAUA")
-        CmdList.append("AAAGB")
-        CmdList.append("ABBLA")
-        CmdList.append("BAALA")
-        CmdList.append("BBAUA") 
-        CmdList.append("AAADB")
-        CmdList.append("ABBKA")
-        CmdList.append("BABLA")
-        CmdList.append("BBAUA")
-        CmdList.append("BABKA")
-        CmdList.append("BBAUA")
-        
+               
     # Main Connection
     # sock.bind(('', PORT1, PORT2, PORT3))
     # Sock1: Crane 1 / Sock2: Crane 2 / Sock3: Input
@@ -406,8 +343,6 @@ def StartServerSocket():
                         pass
 
                 sleep(0.1)
-
-# *** BUG ***
 
 # Function to receive data from Crane1, this function is to be started in another thread
 def StartServerReceive1():
