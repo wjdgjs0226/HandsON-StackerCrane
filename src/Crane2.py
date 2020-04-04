@@ -19,9 +19,9 @@ import socket
 import threading
 import sys
 
-# SRC for Crane2 (Starting from Output Point)
+# SRC for normal Crane2 (Starting from Output Point)
 # Based on EV3DEV, Python 3.7.3
-# Last Update: 20190817
+# Last Update: 20200404
 
 
 # Function to test socket function of EV3Dev
